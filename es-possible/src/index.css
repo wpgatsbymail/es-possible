@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .no-bdr{
+    border-radius: 0px !important;
+} */
+.carousel-h{
+    height: 14em;
+}
+
+@media(min-width:768px){
+    .carousel-h{
+        height: 44em;
+    }
+}
+
+.overlay::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0);
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.overlay:hover::before{
+   
+    opacity: 0.2;
+}
+
+@media(min-width:768px){
+   .flex-quater{
+    flex: 25%;
+   }
+}
