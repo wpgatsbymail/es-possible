@@ -1,13 +1,13 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import parse from "html-react-parser"
+import {  useStaticQuery, graphql } from "gatsby"
+// import parse from "html-react-parser"
 import Header from "./header/Header"
 import '../index.css'
 
 const Layout = ({ isHomePage, children }) => {
   const {
     wp: {
-      generalSettings: { title },
+      generalSettings: { },
     },
   } = useStaticQuery(graphql`
     query LayoutQuery {
