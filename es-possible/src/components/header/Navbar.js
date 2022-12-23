@@ -8,33 +8,7 @@ import { BsFacebook, BsYoutube, BsLinkedin, BsInstagram } from "react-icons/bs"
 const Nav = () => {
   let [open, setOpen] = useState(false)
   return (
-    // <div className="flex flex-col items-center justify-center place-self-center absolute top-[40%] left-[40%] z-10 bg-transparent absolute">
-    //   <div className="flex flex-col items-center justify-center absolute top-[40%] left-[40%] z-10 bg-transparent">
-    //     <svg
-    //       onClick={() => setOpen(!open)}
-    //       className="w-12 h-12 text-white cursor-pointer"
-    //       fill="currentColor"
-    //       viewBox="0 0 20 20"
-    //       xmlns="http://www.w3.org/2000/svg"
-    //     >
-    //       <path
-    //         fillRule="evenodd"
-    //         d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-    //         clipRule="evenodd"
-    //       />
-    //     </svg>
-    //     <div
-    //       className={`flex flex-col bg-white shadow top-0 left-[40%] w-20 font-bold h-0`}
-    //     >
-    //       <Link to="/"> Link</Link>
-    //       <Link to="/"> Link</Link>
-    //       <Link to="/"> Link</Link>
-    //       <Link to="/"> Link</Link>
-    //       <Link to="/"> Link</Link>
-    //       <Link to="/"> Link</Link>
-    //     </div>
-    //   </div>
-    // </div>
+
     <div className="flex flex-col justify-around items-center gap-4 absolute top-0 bottom-0 left-0 right-0 z-[2] bg-transparent w-full">
       <div className="flex flex-col justify-center items-center gap-4 md:flex-row md:justify-around md:w-full">
         <Link to="/">
@@ -129,7 +103,7 @@ const Nav = () => {
           </Link>
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
-            to="/ontakt"
+            to="/kontakt"
           >
             Kontakt
           </Link>

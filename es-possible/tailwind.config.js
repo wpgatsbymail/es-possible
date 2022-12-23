@@ -9,6 +9,9 @@ module.exports = {
     },
     extend: {
       Poppins: ['Poppins'],
+      boxShadow: {
+        '3xl': '1px 3px 10px 2px rgba(66, 68, 90, 1)',
+      }
     },
   },
   plugins: [require('flowbite/plugin')],
