@@ -1068,7 +1068,7 @@ h6.has-background {
   margin: 0 0 1em 0;
 }
 .wp-block-image img {
-  max-width: 100%;
+  width: 100%;
 }
 .wp-block-image:not(.is-style-rounded) img {
   border-radius: inherit;

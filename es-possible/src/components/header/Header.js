@@ -1,18 +1,21 @@
 import React from "react"
-import Nav from "./navbar"
-import { StaticImage } from 'gatsby-plugin-image'
+import Nav from "./Navbar"
+import { StaticImage } from "gatsby-plugin-image"
 
 // import Slider from './Slider'
 // import HeroImage from "./HeroImage"
-const Header = () => {
+const HeaderPages = () => {
   return (
-    <div className="relative z-0 flex flex-col before:content-['*'] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:z-1 before:bg-black bg-opacity-30   ">
+    <div className="relative z-0 flex flex-col  before:content-['*'] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:z-1 before:bg-black bg-opacity-40   ">
       <Nav />
       {/* <Slider/> */}
-      <StaticImage  className='hero-image' src="zamiast slajdera.jpg" alt="A dinosaur" />
-
+      <StaticImage
+        className="min-h-[450px] md:max-h-[300px]"
+        src="zamiast kubka z kawa3.jpg"
+        alt="hero image"
+      />
     </div>
   )
-}
+} 
 
-export default Header
+export default HeaderPages

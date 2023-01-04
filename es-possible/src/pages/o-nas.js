@@ -21,7 +21,7 @@ const aboutUs = () => {
             alt="Nasze lektorki"
           />
         </div>
-        <div className="flex flex-col justify-center items-center gap-4 pb-2 border-b-[1px] border-black border-solid md:w-[50vw]">
+        <div className="flex flex-col justify-center items-center gap-4 pb-2 border-b-[1px] border-black border-solid lg:w-[50vw]">
           <h3 className="text-xl font-bold mt-4">EsPossible</h3>
           <p className="text-center">
             Jesteśmy dwiema niezależnymi nauczycielkami, które od kilku lat

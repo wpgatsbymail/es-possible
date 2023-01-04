@@ -1,11 +1,14 @@
 import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import Layout from "../components/layout"
 import { Card } from "flowbite-react"
 import parse from "html-react-parser"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Testimonials from "../components/testimonials/Testimonials"
+import HeaderHomePage from "../components/header/HeadeHomePage"
+import Footer from "../components/footer"
+import '../index.css'
+
 // import BlogIndex from '../templates/blog-post-archive'
 
 const index = ({ data }) => {
@@ -14,12 +17,13 @@ const index = ({ data }) => {
 
   // console.log(homepagePosts)
   return (
-    <Layout>
+    <>
+    <HeaderHomePage/>
       {/*-------------------------------------------------------------- CTA--------------------------------------------------------------------------- */}
       <div className="flex flex-col items-center justify-center p-2 gap-2 md:my-20">
-      <div className="flex flex-col justify-center items-center ">
+        <div className="flex flex-col justify-center items-center ">
           <h2 className="flex justify-center text-6xl text-black font-bold mb-4">
-          Hola
+            Hola
           </h2>
           <hr className="bg-[#DE9A08] h-1 w-12 mb-4" />
         </div>
@@ -45,14 +49,16 @@ const index = ({ data }) => {
       {/*-------------------------------------------------------------- KURSY--------------------------------------------------------------------------- */}
 
       <div className="flex flex-col justify-center items-center">
-        <h2 className="flex justify-center text-4xl font-bold mb-2 text-center">Kursy oferowane przez nasze nauczycielki</h2>
-        <hr className="bg-[#DE9A08] h-1 w-[10%] mb-4" />
+        <h2 className="flex justify-center text-4xl font-bold mb-2 text-center">
+          Kursy oferowane przez nasze nauczycielki
+        </h2>
+        <hr className="bg-[#DE9A08] h-1 w-12 mb-4" />
       </div>
       <div className="flex justify-center items-center flex-col gap-2 md:flex-row md:flex-wrap ">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 relative before:content-['*'] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:z-[1] before:bg-[#fff] before:bg-opacity-30">
           <Link
             to="/solo"
-            className="flex  justify-center items-center max-w-xs overlay relative md:max-w-md"
+            className="flex  justify-center items-center max-w-xs overlay relative md:max-w-md "
           >
             <StaticImage className="" src="../images/optimized-1.jpg" alt="" />
             <span className="absolute uppercase text-white font-bold text-lg z-10">
@@ -69,7 +75,7 @@ const index = ({ data }) => {
             </span>
           </Link>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 relative before:content-['*'] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:z-[1] before:bg-[#fff] before:bg-opacity-30">
           <Link
             to="/amigos"
             className="flex justify-center items-center max-w-xs overlay relative md:max-w-md"
@@ -94,7 +100,7 @@ const index = ({ data }) => {
       <div className="bg-[#1B1D1D] mt-6 p-6">
         <div className="flex flex-col justify-center items-center ">
           <h2 className="flex justify-center text-5xl text-gray-100 font-bold mb-4">
-            Blog
+            Nowości
           </h2>
           <hr className="bg-[#DE9A08] h-1 w-12 mb-14" />
         </div>
@@ -137,89 +143,17 @@ const index = ({ data }) => {
         </div>
       </div>
 
-      {/* WHY US?---------------------------------------------------------------------------  */}
-      <div className="flex flex-col justify-center items-center">
-        <h2 className="flex justify-center text-5xl font-bold mb-2">Dlaczego my?</h2>
-        <hr className="bg-red-700 h-1 w-12 mb-4" />
-      </div>
-
-<div className="flex justify-center items-center">
-      <div className="why-us-grid ">
-        {/* <div className="flex flex-col gap-2"> */}
-          <div className="flex  justify-center items-center md:max-w-sm overlay relative ">
-            <StaticImage
-              className=""
-              src="../images/Optimized-dostosowane do twoich potrzeb.jpg"
-              alt=""
-            />
-            <span className="absolute uppercase text-white font-bold text-lg text-center z-10">
-              Lekcje dostosowane do twoich potrzeb
-            </span>
-          </div>
-          <div className="flex justify-center items-center md:max-w-sm overlay relative ">
-            <StaticImage
-              src="../images/Optimized-kazdy poziom i wiek.jpg"
-              alt=""
-            />
-            <span className="absolute uppercase text-white font-bold text-lg text-center z-10">
-              Każdy poziom każdy wiek
-            </span>
-          </div>
-          <div className="flex justify-center items-center md:max-w-sm overlay relative ">
-            <StaticImage src="../images/Optimized-mowisz.jpg" alt="" />
-            <span className="absolute uppercase text-white font-bold text-lg text-center z-10">
-              Lekcje na których mówisz
-            </span>
-          </div>
-        {/* </div> */}
-
-        {/* <div className="flex flex-col gap-2"> */}
-          <div className="flex justify-center items-center md:max-w-sm overlay relative ">
-            <StaticImage
-              src="../images/Optimized-kultura i praktyczna wiedza2.jpg"
-              alt=""
-            />
-            <span className="absolute uppercase text-white font-bold text-lg text-center z-10">
-              Praktyczna wiedza, ciekawostki kulturowe
-            </span>
-          </div>
-          <div className="flex justify-center items-center md:max-w-sm overlay relative ">
-            <StaticImage
-              src="../images/Optimized-materialy interaktywne2.jpg"
-              alt=""
-            />
-            <span className="absolute uppercase text-white font-bold text-lg text-center z-10">
-              Materiały interaktywne
-            </span>
-          </div>
-          <div className="flex justify-center items-center md:max-w-sm overlay relative ">
-            <StaticImage
-              src="../images/Optimized-jezyk specjalistyczny.jpg"
-              alt=""
-            />
-            <span className="absolute uppercase text-white font-bold text-lg text-center z-10">
-              Język specjalistyczny
-            </span>
-          </div>
-        </div>
-        </div>
-        <Testimonials/>
-      {/* </div> */}
-    </Layout>
+      <Testimonials />
+      <Footer/>
+    </>
   )
 }
-
-
 
 export default index
 
 export const homePageQuery = graphql`
   query WordPressHomepagePost {
-    posts: allWpPost(
-   
-      sort: { date: DESC }
-      limit: 6
-    ) {
+    posts: allWpPost(sort: { date: DESC }, limit: 6) {
       nodes {
         excerpt
         uri

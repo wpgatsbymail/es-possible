@@ -4,15 +4,16 @@ import {  GoMail} from "react-icons/go"
 import Footer from '../components/footer'
 import Header from '../components/header/Header'
 import { StaticImage } from "gatsby-plugin-image"
+import Layout from '../components/layout'
 
 
 const kontakt = () => {
   return (
   <>
   <Header/>
-  <div className="flex flex-col justify-center items-center">
+  <div className="flex flex-col justify-center items-center my-8">
           <div className="flex flex-col justify-center items-center ">
-          <h2 className="flex justify-center text-3xl  font-bold text-center my-4">
+          <h2 className="flex justify-center text-3xl  font-bold text-center ">
             Dane Kontaktowe
           </h2>
           <hr className="bg-[#DE9A08] h-1 w-12 mb-14" />
@@ -31,7 +32,7 @@ const kontakt = () => {
 info@espossible-online.com
 </p>
         </div>
-
+        <StaticImage className="md:max-w-[50vw] md:min-w-[450px]  max-w-[80vw] my-8" src="../images/zamiast mapy.jpg" alt="bar z dachem z słomy" />
         </div>
         <Footer/>
   </>

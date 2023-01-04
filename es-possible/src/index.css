@@ -74,7 +74,7 @@ body{
 
 .excerpt{
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; 
     overflow: hidden;
 }
@@ -153,3 +153,38 @@ body{
     width: 100%;
     position: absolute;
   }
+
+/* WORDPRESS PAGES STYLES  */
+
+  .articleBody-styles h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+  }
+  .articleBody-styles h1{
+    font-size: 3em;
+  }
+  .articleBody-styles h2{
+    font-size: 2.5em;
+  }
+  .articleBody-styles h3{
+    font-size: 2em;
+  }
+  .articleBody-styles h4{
+    font-size: 1.5em;
+  }
+  .articleBody-styles h5{
+    font-size: 1em;
+  }
+
+#comments, #reply-title{
+    font-size: 1em;
+}
+
+.blog-post header p{
+    font-size: 1em;
+}
+
+.blog-post header h1{
+    margin: 1em 0;
+}
+
+

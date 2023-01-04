@@ -5,11 +5,11 @@ import { Link } from "gatsby"
 import { BsFacebook, BsYoutube, BsLinkedin, BsInstagram } from "react-icons/bs"
 
 
-const Nav = () => {
+const NavbarHome = () => {
   let [open, setOpen] = useState(false)
   return (
 
-    <div className="flex flex-col justify-center md:justify-center items-center gap-8 md:gap-20 absolute top-0 bottom-0 left-0 right-0 z-[2] bg-transparent w-full">
+    <div className="flex flex-col justify-around items-center gap-4 absolute top-0 bottom-0 left-0 right-0 z-[2] bg-transparent w-full">
       <div className="flex flex-col justify-center items-center gap-4 md:flex-row md:justify-around md:w-full">
         <Link to="/">
           <StaticImage
@@ -20,27 +20,27 @@ const Nav = () => {
           />
         </Link>
 
-        <div className="flex gap-4">
+        <div className="flex gap-8">
           <a
-            className="text-white hover:text-[#DE9A08] text-2xl"
+            className="text-white hover:text-[#DE9A08] text-[1.4em]"
             href="https://www.facebook.com/espossiblelc"
           >
             <BsFacebook />
           </a>
           <a
-            className="text-white hover:text-[#DE9A08] text-2xl"
+            className="text-white hover:text-[#DE9A08] text-[1.4em]"
             href="https://www.youtube.com/channel/UC3J0HapRz_lMaUKQpUcKSrQ"
           >
             <BsYoutube />
           </a>
           <a
-            className="text-white hover:text-[#DE9A08] text-2xl"
+            className="text-white hover:text-[#DE9A08] text-[1.4em]"
             href="http://www.linkedin.com/in/es-possible"
           >
             <BsLinkedin />
           </a>
           <a
-            className="text-white hover:text-[#DE9A08] text-2xl"
+            className="text-white hover:text-[#DE9A08] text-[1.4em]"
             href="https://www.instagram.com/espossible.spanish/?igshid=YmMyMTA2M2Y%3D"
           >
             <BsInstagram />
@@ -110,14 +110,20 @@ const Nav = () => {
         </div>
       </div>
 
-
+      <div className=" flex justify-center items-center flex-col gap-8">
+        <span className="text-xl text-white text-center font-extrabold md:text-4xl">
+          Nauka, Relaks, Przygoda - Es Possible
+        </span>
+        <button
+          className="text-[18px] font-medium text-white bg-[#DE9A08] rounded-3xl px-8 py-4"
+          href="/o-nas"
+        >
+          Dlaczego my
+        </button>
+      </div>
     </div>
-    // font-size: 18px;
-    // font-weight: 500;
-    // background-color: #DE9A08;
-    // border-radius: 25px 25px 25px 25px;
-    // padding: 01em 02em 01em 02em;
+
   )
 }
 
-export default Nav
+export default NavbarHome
