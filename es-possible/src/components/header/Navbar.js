@@ -74,36 +74,42 @@ const Nav = () => {
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/"
+            activeStyle={{ color: "#DE9B09" }}
           >
             Hiszpański
           </Link>
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/kursy"
+            activeStyle={{ color: "#DE9B09" }}
           >
             Kursy
           </Link>
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/blog"
+            activeStyle={{ color: "#DE9B09" }}
           >
             Blog
           </Link>
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/cwiczenia"
+            activeStyle={{ color: "#DE9B09" }}
           >
             Ćwiczenia
           </Link>
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/o-nas"
+            activeStyle={{ color: "#DE9B09" }}
           >
             O nas
           </Link>
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/kontakt"
+            activeStyle={{ color: "#DE9B09" }}
           >
             Kontakt
           </Link>

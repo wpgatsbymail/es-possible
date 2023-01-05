@@ -27,6 +27,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@formspree/react": "^2.4.1",
     "@heroicons/react": "^2.0.13",
     "@react-icons/all-files": "^4.1.0",
     "flowbite": "^1.5.4",

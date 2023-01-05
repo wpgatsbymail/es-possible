@@ -74,36 +74,42 @@ const NavbarHome = () => {
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/"
+            activeStyle={{ color: "#DE9B09" }}
           >
             Hiszpański
           </Link>
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/kursy"
+            activeStyle={{ color: "#DE9B09" }}
           >
             Kursy
           </Link>
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/blog"
+            activeStyle={{ color: "#DE9B09" }}
           >
             Blog
           </Link>
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/cwiczenia"
+            activeStyle={{ color: "#DE9B09" }}
           >
             Ćwiczenia
           </Link>
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/o-nas"
+            activeStyle={{ color: "#DE9B09" }}
           >
             O nas
           </Link>
           <Link
             className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/kontakt"
+            activeStyle={{ color: "#DE9B09" }}
           >
             Kontakt
           </Link>
@@ -114,12 +120,12 @@ const NavbarHome = () => {
         <span className="text-xl text-white text-center font-extrabold md:text-4xl">
           Nauka, Relaks, Przygoda - Es Possible
         </span>
-        <button
+        <Link to="/o-nas" as="button"
           className="text-[18px] font-medium text-white bg-[#DE9A08] rounded-3xl px-8 py-4"
           href="/o-nas"
         >
           Dlaczego my
-        </button>
+        </Link>
       </div>
     </div>
 

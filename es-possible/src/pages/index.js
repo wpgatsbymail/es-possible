@@ -114,14 +114,14 @@ const index = ({ data }) => {
                   .gatsbyImageData
               return (
                 <div className=" max-w-sm grid-blog__item">
-                  <Card>
+                  <div className="flex flex-col bg-white">
                     <GatsbyImage
                       className="min-h-96"
                       image={featuredImage}
                       // alt={featuredImage.alt}
                       // style={{ marginBottom: 50 }}
                     />
-                    <Link to={post.uri} itemProp="url">
+                    <Link className="p-4" to={post.uri} itemProp="url">
                       <h5
                         itemProp="headline"
                         className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -135,7 +135,7 @@ const index = ({ data }) => {
                         {parse(post.excerpt)}
                       </p>
                     </Link>
-                  </Card>
+                  </div>
                 </div>
               )
             })}

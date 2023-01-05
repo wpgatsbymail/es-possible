@@ -10,7 +10,7 @@ const Testimonials = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 7000,
     pauseOnHover: true,
     pauseOnHover: true,
     responsive: [
@@ -26,8 +26,8 @@ const Testimonials = () => {
     ],
   }
   return (
-    <div>
-      <Slider className="  flex justify-center items-center md:px-[18vw]"  {...settings}>
+    <div className="max-w-screen">
+      <Slider className="  flex justify-center items-center lg:px-[18vw] overflow-hidden"  {...settings}>
   
         <div className="p-4 flex relative  ">
           <IoMdQuote className="absolute top-0 right-[1em] z-0 text-[#FFE27D] text-5xl "  />
@@ -119,11 +119,11 @@ const Testimonials = () => {
         </div>
         <div className="p-4 relative ">
           <IoMdQuote className="absolute top-0 right-[1em] z-0 text-[#FFE27D] text-5xl" />
-          <h3 className="relative z-1 text-[#8D8D8D] text-base md:p-8 ">
+          <h3 className="relative z-1 text-[#8D8D8D] text-base ">
             Bardzo polecam zajęcia z Solanlly ponieważ jest cierpliwą
             nauczycielką, potrafi wszystko wytłumaczyć w jasny sposób z
             pozytywnym nastawieniem a także organizuje zajęcia z różnorodnymi
-            ćwiczeniami i ciekawą tematyką.
+            ćwiczeniami i ciekawą tematyką.
           </h3>
           <h3 className="mt-4">
             <b className="text-lg ">Magdalena Stawowy</b>
