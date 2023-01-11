@@ -1,7 +1,7 @@
 import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import { Card } from "flowbite-react"
+
 import parse from "html-react-parser"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Testimonials from "../components/testimonials/Testimonials"
@@ -54,14 +54,14 @@ const index = ({ data }) => {
         </h2>
         <hr className="bg-[#DE9A08] h-1 w-12 mb-4" />
       </div>
-      <div className="flex justify-center items-center flex-col gap-2 md:flex-row md:flex-wrap ">
+      <div className="flex justify-center items-center flex-col gap-2 md:flex-row md:flex-wrap md:text-[#fff] ">
         <div className="flex flex-col gap-2 relative before:content-['*'] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:z-[1] before:bg-[#fff] before:bg-opacity-30">
           <Link
             to="/solo"
             className="flex  justify-center items-center max-w-xs overlay relative md:max-w-md "
           >
             <StaticImage className="" src="../images/optimized-1.jpg" alt="" />
-            <span className="absolute uppercase text-white font-bold text-lg z-10">
+            <span className="absolute uppercase text-[#fff] font-bold text-lg z-10">
               solo-lekcje indywidualne
             </span>
           </Link>
@@ -70,7 +70,7 @@ const index = ({ data }) => {
             className="flex justify-center items-center max-w-xs overlay relative md:max-w-md"
           >
             <StaticImage src="../images/optimized-2.jpg" alt="" />
-            <span className="absolute uppercase text-white font-bold text-lg z-10">
+            <span className="absolute uppercase text-[#fff] font-bold text-lg z-10">
               duo-lekcje w parach
             </span>
           </Link>
@@ -81,7 +81,7 @@ const index = ({ data }) => {
             className="flex justify-center items-center max-w-xs overlay relative md:max-w-md"
           >
             <StaticImage src="../images/optimized-3.jpg" alt="" />
-            <span className="absolute uppercase text-white font-bold text-lg z-10">
+            <span className="absolute uppercase text-[#fff] font-bold text-lg z-10">
               amigos-lekcje-grupowe
             </span>
           </Link>
@@ -90,7 +90,7 @@ const index = ({ data }) => {
             className="flex justify-center items-center max-w-xs overlay relative md:max-w-md"
           >
             <StaticImage src="../images/optimized-4.jpg" alt="" />
-            <span className="absolute uppercase text-white font-bold text-lg z-10">
+            <span className="absolute uppercase text-[#fff] font-bold text-lg z-10">
               MEDELLÍN lekcje stacjonarne
             </span>
           </Link>
@@ -99,7 +99,7 @@ const index = ({ data }) => {
       {/*-------------------------------------------------------------- BLOG--------------------------------------------------------------------------- */}
       <div className="bg-[#1B1D1D] mt-6 p-6">
         <div className="flex flex-col justify-center items-center ">
-          <h2 className="flex justify-center text-5xl text-gray-100 font-bold mb-4">
+          <h2 className="flex justify-center text-5xl text-[#fff] font-bold mb-4">
             Nowości
           </h2>
           <hr className="bg-[#DE9A08] h-1 w-12 mb-14" />
@@ -114,7 +114,7 @@ const index = ({ data }) => {
                   .gatsbyImageData
               return (
                 <div className=" max-w-sm grid-blog__item">
-                  <div className="flex flex-col bg-white">
+                  <div className="flex flex-col bg-[#fff] ">
                     <GatsbyImage
                       className="min-h-96"
                       image={featuredImage}
@@ -124,7 +124,7 @@ const index = ({ data }) => {
                     <Link className="p-4" to={post.uri} itemProp="url">
                       <h5
                         itemProp="headline"
-                        className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                        className="text-2xl font-bold tracking-tight text-gray-900"
                       >
                         {parse(title)}
                       </h5>

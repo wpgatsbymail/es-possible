@@ -1,18 +1,17 @@
 import React from "react"
-import Footer from "../components/footer"
-import Header from "../components/header/Header"
+import Layout from "../components/layout"
+
 import { StaticImage } from "gatsby-plugin-image"
 
 const aboutUs = () => {
   return (
-    <>
-      <Header />
+    <Layout>
       <div className="px-2 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center ">
-          <h2 className="flex justify-center text-5xl  font-bold my-8">
+          <h2 className="flex justify-center text-4xl md:text-5xl  font-bold my-2 md:my-4">
             O nas
           </h2>
-          <hr className="bg-[#DE9A08] h-1 w-12 mb-14" />
+          <hr className="bg-[#DE9A08] h-[2px] md:h-1 w-12 mb-14" />
         </div>
         <div className="flex justify-center items-center ">
           <StaticImage
@@ -104,7 +103,7 @@ const aboutUs = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center my-8">
-          <h2 className="flex justify-center text-5xl font-bold mb-2">
+          <h2 className="flex justify-center text-5xl font-bold mb-2 text-center">
             Dlaczego my?
           </h2>
           <hr className="bg-[#DE9A08] h-1 w-12 mb-4" />
@@ -117,7 +116,7 @@ const aboutUs = () => {
                 src="../images/Optimized-dostosowane do twoich potrzeb.jpg"
                 alt=""
               />
-              <span className="absolute uppercase text-white font-bold text-lg text-center z-10">
+              <span className="absolute uppercase text-[#fff] font-bold text-lg text-center z-10">
                 Lekcje dostosowane do twoich potrzeb
               </span>
             </div>
@@ -126,13 +125,13 @@ const aboutUs = () => {
                 src="../images/Optimized-kazdy poziom i wiek.jpg"
                 alt=""
               />
-              <span className="absolute uppercase text-white font-bold text-lg text-center z-10">
+              <span className="absolute uppercase text-[#fff] font-bold text-lg text-center z-10">
                 Każdy poziom każdy wiek
               </span>
             </div>
             <div className="flex justify-center items-center md:max-w-sm overlay relative ">
               <StaticImage src="../images/Optimized-mowisz.jpg" alt="" />
-              <span className="absolute uppercase text-white font-bold text-lg text-center z-10">
+              <span className="absolute uppercase text-[#fff] font-bold text-lg text-center z-10">
                 Lekcje na których mówisz
               </span>
             </div>
@@ -142,7 +141,7 @@ const aboutUs = () => {
                 src="../images/Optimized-kultura i praktyczna wiedza2.jpg"
                 alt=""
               />
-              <span className="absolute uppercase text-white font-bold text-lg text-center z-10">
+              <span className="absolute uppercase text-[#fff] font-bold text-lg text-center z-10">
                 Praktyczna wiedza, ciekawostki kulturowe
               </span>
             </div>
@@ -151,7 +150,7 @@ const aboutUs = () => {
                 src="../images/Optimized-materialy interaktywne2.jpg"
                 alt=""
               />
-              <span className="absolute uppercase text-white font-bold text-lg text-center z-10">
+              <span className="absolute uppercase text-[#fff] font-bold text-lg text-center z-10">
                 Materiały interaktywne
               </span>
             </div>
@@ -160,15 +159,14 @@ const aboutUs = () => {
                 src="../images/Optimized-jezyk specjalistyczny.jpg"
                 alt=""
               />
-              <span className="absolute uppercase text-white font-bold text-lg text-center z-10">
+              <span className="absolute uppercase text-[#fff] font-bold text-lg text-center z-10">
                 Język specjalistyczny
               </span>
             </div>
           </div>
         </div>
       </div>
-      <Footer />
-    </>
+    </Layout>
   )
 }
 

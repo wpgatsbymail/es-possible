@@ -6,13 +6,13 @@ const kursy = () => {
     <Layout>
       <div className=" flex flex-col justify-center items-center mb-8 gap-4">
         <div className="flex flex-col justify-center items-center ">
-          <h2 className="flex justify-center text-6xl text-black font-bold my-4">
+          <h2 className="flex justify-center text-4xl md:text-5xl text-black font-bold my-4">
             Kursy
           </h2>
-          <hr className="bg-[#DE9A08] h-[2px] w-12 mb-4" />
+          <hr className="bg-[#DE9A08] h-1 w-12 mb-14" />
         </div>
         <div className="grid md:grid-cols-2 lg:max-w-[60vw]">
-          <div className="flex flex-col justify-center items-center border-slate-500 border-solid border-2 m-4 p-4">
+          <div className="flex flex-col justify-center items-center border-slate-500 border-solid border m-4 p-4">
             <h3 className="text-3xl font-bold mb-8">SOLO</h3>
             <div className="flex flex-col justify-center items-center text-xl text-center">
               <p>
@@ -37,7 +37,7 @@ const kursy = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col  items-center border-slate-500 border-solid border-2 m-4 p-4">
+          <div className="flex flex-col  items-center border-slate-500 border-solid border m-4 p-4">
             <h3 className="text-3xl font-bold mb-8">DUO</h3>
             <div className="flex flex-col justify-center items-center text-xl text-center">
               <p>
@@ -63,7 +63,7 @@ const kursy = () => {
           </div>
      
 
-        <div className="flex flex-col  items-center border-slate-500 border-solid border-2 m-4 p-4">
+        <div className="flex flex-col  items-center border-slate-500 border-solid border m-4 p-4">
           <h3 className="text-3xl font-bold mb-8">AMIGOS</h3>
           <div className="flex flex-col justify-center items-center text-xl text-center">
             <p>
@@ -88,7 +88,7 @@ const kursy = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center text-center gap-8 border-slate-500 border-solid border-2 m-4 p-4">
+        <div className="flex flex-col justify-center items-center text-center gap-8 border-slate-500 border-solid border m-4 p-4">
           <h3 className="text-3xl font-bold ">MEDELLÍN LEKCJE STACJONARNE</h3>
           <div className="flex flex-col justify-center items-center text-xl text-center">
             <p>

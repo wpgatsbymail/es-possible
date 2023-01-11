@@ -12,7 +12,6 @@ const Testimonials = () => {
     autoplay: true,
     autoplaySpeed: 7000,
     pauseOnHover: true,
-    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 768,
@@ -27,10 +26,12 @@ const Testimonials = () => {
   }
   return (
     <div className="max-w-screen">
-      <Slider className="  flex justify-center items-center lg:px-[18vw] overflow-hidden"  {...settings}>
-  
+      <Slider
+        className="  flex justify-center items-center lg:px-[18vw] overflow-hidden"
+        {...settings}
+      >
         <div className="p-4 flex relative  ">
-          <IoMdQuote className="absolute top-0 right-[1em] z-0 text-[#FFE27D] text-5xl "  />
+          <IoMdQuote className="absolute top-0 right-[1em] z-0 text-[#FFE27D] text-5xl " />
           <h3 className="relative z-1 text-[#8D8D8D] text-xs">
             Hiszpańskiego zaczęłam się uczyć z Anią 2.5 roku temu w formie
             online. Nigdy wcześniej nie uczyłam się tego języka. Już od

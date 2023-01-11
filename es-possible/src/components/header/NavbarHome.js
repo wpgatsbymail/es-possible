@@ -9,7 +9,7 @@ const NavbarHome = () => {
   let [open, setOpen] = useState(false)
   return (
 
-    <div className="flex flex-col justify-around items-center gap-4 absolute top-0 bottom-0 left-0 right-0 z-[2] bg-transparent w-full">
+    <div className="flex flex-col justify-around items-center gap-4 absolute top-0 bottom-0 left-0 right-0 z-[2] transparent w-full">
       <div className="flex flex-col justify-center items-center gap-4 md:flex-row md:justify-around md:w-full">
         <Link to="/">
           <StaticImage
@@ -20,27 +20,27 @@ const NavbarHome = () => {
           />
         </Link>
 
-        <div className="flex gap-8">
+        <div className="flex gap-8 text-[#fff]">
           <a
-            className="text-white hover:text-[#DE9A08] text-[1.4em]"
+            className="text-[#fff] hover:text-[#DE9A08] text-[1.4em]"
             href="https://www.facebook.com/espossiblelc"
           >
             <BsFacebook />
           </a>
           <a
-            className="text-white hover:text-[#DE9A08] text-[1.4em]"
+            className="text-[#fff] hover:text-[#DE9A08] text-[1.4em]"
             href="https://www.youtube.com/channel/UC3J0HapRz_lMaUKQpUcKSrQ"
           >
             <BsYoutube />
           </a>
           <a
-            className="text-white hover:text-[#DE9A08] text-[1.4em]"
+            className="text-[#fff] hover:text-[#DE9A08] text-[1.4em]"
             href="http://www.linkedin.com/in/es-possible"
           >
             <BsLinkedin />
           </a>
           <a
-            className="text-white hover:text-[#DE9A08] text-[1.4em]"
+            className="text-[#fff] hover:text-[#DE9A08] text-[1.4em]"
             href="https://www.instagram.com/espossible.spanish/?igshid=YmMyMTA2M2Y%3D"
           >
             <BsInstagram />
@@ -50,7 +50,7 @@ const NavbarHome = () => {
       <div className="relative flex flex-col justify-around items-center">
         <svg
           onClick={() => setOpen(!open)}
-          className="w-12 h-12 flex justify-center text-white cursor-pointer md:hidden"
+          className="w-12 h-12 flex justify-center text-[#fff] cursor-pointer md:hidden"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -67,12 +67,12 @@ const NavbarHome = () => {
           
         </svg>
         <div
-          className={`absolute top-16 z-[2] w-40 flex justify-center items-center flex-col p-4 gap-4 text-lg bg-white shadow font-bold overflow-hidden transition-all duration-500 ease-in md:relative md:top-0 md:flex-row md:text-white  md:text-2xl md:gap-6 md:bg-transparent md:shadow-none md:flex md:w-full ${
+          className={`absolute top-16 z-[2] w-40 flex justify-center items-center flex-col p-4 gap-4 text-lg bg-[#fff] shadow font-bold overflow-hidden transition-all duration-500 ease-in md:relative md:top-0 md:flex-row md:text-[#fff]   md:text-2xl md:gap-6 transparent md:shadow-none md:flex md:w-full ${
             open ? "flex" : "hidden"
           }`}
         >
           <Link
-            className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
+            className="hover:text-[#DE9A08]  md:active:text-[#DE9A08]  "
             to="/"
             activeStyle={{ color: "#DE9B09" }}
           >
@@ -117,11 +117,11 @@ const NavbarHome = () => {
       </div>
 
       <div className=" flex justify-center items-center flex-col gap-8">
-        <span className="text-xl text-white text-center font-extrabold md:text-4xl">
+        <span className="text-xl text-[#fff]  text-center font-extrabold md:text-4xl">
           Nauka, Relaks, Przygoda - Es Possible
         </span>
         <Link to="/o-nas" as="button"
-          className="text-[18px] font-medium text-white bg-[#DE9A08] rounded-3xl px-8 py-4"
+          className="text-[18px] font-medium text-[#fff]  bg-[#DE9A08] rounded-3xl px-8 py-4"
           href="/o-nas"
         >
           Dlaczego my

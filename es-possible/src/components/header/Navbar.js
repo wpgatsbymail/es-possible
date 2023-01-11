@@ -20,27 +20,27 @@ const Nav = () => {
           />
         </Link>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 text-[#fff] ">
           <a
-            className="text-white hover:text-[#DE9A08] text-2xl"
+            className=" hover:text-[#DE9A08] text-2xl md:text-[#fff]"
             href="https://www.facebook.com/espossiblelc"
           >
-            <BsFacebook />
+            <BsFacebook className="text-[#fff]" />
           </a>
           <a
-            className="text-white hover:text-[#DE9A08] text-2xl"
+            className="text-[#fff] hover:text-[#DE9A08] text-2xl md:text-[#fff]"
             href="https://www.youtube.com/channel/UC3J0HapRz_lMaUKQpUcKSrQ"
           >
             <BsYoutube />
           </a>
           <a
-            className="text-white hover:text-[#DE9A08] text-2xl"
+            className="text-[#fff] hover:text-[#DE9A08] text-2xl"
             href="http://www.linkedin.com/in/es-possible"
           >
             <BsLinkedin />
           </a>
           <a
-            className="text-white hover:text-[#DE9A08] text-2xl"
+            className="text-[#fff] hover:text-[#DE9A08] text-2xl"
             href="https://www.instagram.com/espossible.spanish/?igshid=YmMyMTA2M2Y%3D"
           >
             <BsInstagram />
@@ -50,7 +50,7 @@ const Nav = () => {
       <div className="relative flex flex-col justify-around items-center">
         <svg
           onClick={() => setOpen(!open)}
-          className="w-12 h-12 flex justify-center text-white cursor-pointer md:hidden"
+          className="w-12 h-12 flex justify-center text-[#fff] cursor-pointer md:hidden"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -67,47 +67,47 @@ const Nav = () => {
           
         </svg>
         <div
-          className={`absolute top-16 z-[2] w-40 flex justify-center items-center flex-col p-4 gap-4 text-lg bg-white shadow font-bold overflow-hidden transition-all duration-500 ease-in md:relative md:top-0 md:flex-row md:text-white  md:text-2xl md:gap-6 md:bg-transparent md:shadow-none md:flex md:w-full ${
+          className={`absolute top-16 z-[2] w-40 flex justify-center items-center flex-col p-4 gap-4 text-lg bg-[#fff] shadow font-bold overflow-hidden transition-all duration-500 ease-in md:relative md:top-0 md:flex-row md:text-[#fff]   md:text-2xl md:gap-6 transparent md:shadow-none md:flex md:w-full ${
             open ? "flex" : "hidden"
           }`}
         >
           <Link
-            className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
+            className="md:text-[#fff] hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/"
             activeStyle={{ color: "#DE9B09" }}
           >
             Hiszpański
           </Link>
           <Link
-            className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
+            className="md:text-[#fff] hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/kursy"
             activeStyle={{ color: "#DE9B09" }}
           >
             Kursy
           </Link>
           <Link
-            className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
+            className=" md:text-[#fff] hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/blog"
             activeStyle={{ color: "#DE9B09" }}
           >
             Blog
           </Link>
           <Link
-            className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
+            className="md:text-[#fff] hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/cwiczenia"
             activeStyle={{ color: "#DE9B09" }}
           >
             Ćwiczenia
           </Link>
           <Link
-            className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
+            className="md:text-[#fff] hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/o-nas"
             activeStyle={{ color: "#DE9B09" }}
           >
             O nas
           </Link>
           <Link
-            className="hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
+            className="md:text-[#fff] hover:text-[#DE9A08] md:active:text-[#DE9A08]  "
             to="/kontakt"
             activeStyle={{ color: "#DE9B09" }}
           >

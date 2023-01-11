@@ -1,20 +1,18 @@
 import React from "react"
-import { Card } from "flowbite-react"
+
 import parse from "html-react-parser"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import Header from "../components/header/Header"
-import Footer from "../components/Footer"
+import Layout from "../components/layout"
 
 const blog = ({ data }) => {
   const blogPosts = data.blogPosts.nodes
   return (
-    <>
-      <Header />
+ <Layout>
       <div className=" flex flex-col justify-center items-center mb-8 gap-4">
         <div className="mt-6 p-6">
           <div className="flex flex-col justify-center items-center ">
-            <h2 className="flex justify-center text-5xl  font-bold mb-4">
+            <h2 className="flex justify-center text-4xl md:text-5xl  font-bold mb-4">
               Blog
             </h2>
             <hr className="bg-[#DE9A08] h-1 w-12 mb-14" />
@@ -29,14 +27,14 @@ const blog = ({ data }) => {
                     .gatsbyImageData
                 return (
                   <div className=" max-w-sm grid-blog__item">
-                    <Card>
+                     <div className="flex flex-col bg-white shadow-xl">
                       <GatsbyImage
                         className="min-h-96"
                         image={featuredImage}
                         // alt={featuredImage.alt}
                         // style={{ marginBottom: 50 }}
                       />
-                      <Link to={post.uri} itemProp="url">
+                      <Link to={post.uri} itemProp="url" className="p-4">
                         <h5
                           itemProp="headline"
                           className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -50,7 +48,7 @@ const blog = ({ data }) => {
                           {parse(post.excerpt)}
                         </p>
                       </Link>
-                    </Card>
+                    </div>
                   </div>
                 )
               })}
@@ -58,8 +56,7 @@ const blog = ({ data }) => {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
+      </Layout>
   )
 }
 

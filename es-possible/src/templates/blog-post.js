@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { Card } from "flowbite-react"
+
 
 import parse from "html-react-parser"
-import LatestArticles from "../components/LatestArticles"
+
 
 // We're using Gutenberg so we need the block styles
 // these are copied into this project due to a conflict in the postCSS
