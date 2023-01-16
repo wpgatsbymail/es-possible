@@ -7,18 +7,14 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import Testimonials from "../components/testimonials/Testimonials"
 import HeaderHomePage from "../components/header/HeadeHomePage"
 import Footer from "../components/footer"
-import '../index.css'
-
-// import BlogIndex from '../templates/blog-post-archive'
+import "../index.css"
 
 const index = ({ data }) => {
   const posts = data.posts.nodes
-  // const exercises = data.exercises.nodes
 
-  // console.log(homepagePosts)
   return (
     <>
-    <HeaderHomePage/>
+      <HeaderHomePage />
       {/*-------------------------------------------------------------- CTA--------------------------------------------------------------------------- */}
       <div className="flex flex-col items-center justify-center p-2 gap-2 md:my-20">
         <div className="flex flex-col justify-center items-center ">
@@ -109,18 +105,23 @@ const index = ({ data }) => {
             {/* <div className="flex justify-center items-center"> */}
             {posts.map(post => {
               const title = post.title
-              const featuredImage =
-                post.featuredImage.node.localFile.childImageSharp
-                  .gatsbyImageData
+              // const featuredImage =
+              //   post.featuredImage.node.localFile.childImageSharp
+              //     .gatsbyImageData
               return (
                 <div className=" max-w-sm grid-blog__item">
                   <div className="flex flex-col bg-[#fff] ">
-                    <GatsbyImage
+                    {/* <GatsbyImage
                       className="min-h-96"
                       image={featuredImage}
-                      // alt={featuredImage.alt}
-                      // style={{ marginBottom: 50 }}
+             
+                    /> */}
+                    <StaticImage
+                      className="min-h-96"
+                      src="../images/optimized-1.jpg"
+                      alt=""
                     />
+
                     <Link className="p-4" to={post.uri} itemProp="url">
                       <h5
                         itemProp="headline"
@@ -144,7 +145,7 @@ const index = ({ data }) => {
       </div>
 
       <Testimonials />
-      <Footer/>
+      <Footer />
     </>
   )
 }

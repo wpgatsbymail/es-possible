@@ -1,5 +1,5 @@
 import React from "react"
-
+import { StaticImage } from "gatsby-plugin-image"
 import parse from "html-react-parser"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
@@ -8,7 +8,7 @@ import Layout from "../components/layout"
 const blog = ({ data }) => {
   const blogPosts = data.blogPosts.nodes
   return (
- <Layout>
+    <Layout>
       <div className=" flex flex-col justify-center items-center mb-8 gap-4">
         <div className="mt-6 p-6">
           <div className="flex flex-col justify-center items-center ">
@@ -22,18 +22,19 @@ const blog = ({ data }) => {
               {/* <div className="flex justify-center items-center"> */}
               {blogPosts.map(post => {
                 const title = post.title
-                const featuredImage =
-                  post.featuredImage.node.localFile.childImageSharp
-                    .gatsbyImageData
+                // const featuredImage =
+                //   post.featuredImage.node.localFile.childImageSharp
+                //     .gatsbyImageData
                 return (
                   <div className=" max-w-sm grid-blog__item">
-                     <div className="flex flex-col bg-white shadow-xl">
-                      <GatsbyImage
+                    <div className="flex flex-col bg-white shadow-xl">
+                      {/* <GatsbyImage
                         className="min-h-96"
                         image={featuredImage}
-                        // alt={featuredImage.alt}
-                        // style={{ marginBottom: 50 }}
-                      />
+             
+                      /> */}
+                      <StaticImage src="../images/optimized-2.jpg" className="min-h-96" alt="" />
+
                       <Link to={post.uri} itemProp="url" className="p-4">
                         <h5
                           itemProp="headline"
@@ -56,7 +57,7 @@ const blog = ({ data }) => {
           </div>
         </div>
       </div>
-      </Layout>
+    </Layout>
   )
 }
 
@@ -66,8 +67,9 @@ export const blogPageQuery = graphql`
   query WordPressBlogPagePost {
     blogPosts: allWpPost(
       sort: { date: DESC }
-
-      filter: { categories: { nodes: { elemMatch: { name: { eq: "Post" } } } } }
+      filter: {
+        categories: { nodes: { elemMatch: { name: { eq: "Block" } } } }
+      }
     ) {
       nodes {
         excerpt

@@ -195,3 +195,31 @@ body{
     }
  
  }
+
+ @media(min-width:768px){
+    .latest-grid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 1em;
+margin: 0 1em;
+    }
+ 
+ }
+
+ @media(min-width:1024px){
+    .latest-grid{
+
+grid-template-columns: 1fr 1fr;
+    }
+ 
+ }
+
+ @media(min-width:1024px){
+    .latest-grid{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+    }
+ 
+ }
+
+
