@@ -1,7 +1,7 @@
 import React from "react"
 
 import Slider from "react-slick"
-import { IoMdQuote } from "react-icons/Io"
+import { IoMdQuote } from "react-icons/io"
 
 const Testimonials = () => {
   const settings = {

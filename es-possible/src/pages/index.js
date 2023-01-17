@@ -6,7 +6,7 @@ import parse from "html-react-parser"
 
 import Testimonials from "../components/testimonials/Testimonials"
 import HeaderHomePage from "../components/header/HeadeHomePage"
-import Footer from "../components/footer"
+import Footer from "../components/Footer"
 import "../index.css"
 
 const index = ({ data }) => {

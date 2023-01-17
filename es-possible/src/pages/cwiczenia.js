@@ -37,7 +37,7 @@ const blog = ({ data }) => {
                       image={featuredImage}
           
                     /> */}
-                                          <StaticImage src="../images/optimized-3.jpg" className="min-h-96" alt="" />
+                                          <StaticImage src="../images/Optimized-3.jpg" className="min-h-96" alt="" />
 
                     <Link to={post.uri} itemProp="url" className="p-4">
                       <h5
