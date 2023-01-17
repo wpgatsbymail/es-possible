@@ -3,7 +3,7 @@ import {  useStaticQuery, graphql } from "gatsby"
 // import parse from "html-react-parser"
 import Header from "./header/Header"
 import '../index.css'
-import Footer from "./footer"
+import Footer from "./Footer"
 
 const Layout = ({ isHomePage, children }) => {
   const {

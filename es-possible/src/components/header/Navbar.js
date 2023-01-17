@@ -15,7 +15,7 @@ const Nav = () => {
           <StaticImage
             className="w-20 h-20"
             placeholder="none"
-            src="logo.png"
+            src="LOGO.png"
             alt="logo"
           />
         </Link>

@@ -56,7 +56,7 @@ const index = ({ data }) => {
             to="/solo"
             className="flex  justify-center items-center max-w-xs overlay relative md:max-w-md "
           >
-            <StaticImage className="" src="../images/optimized-1.jpg" alt="" />
+            <StaticImage className="" src="../images/Optimized-1.jpg" alt="" />
             <span className="absolute uppercase text-[#fff] font-bold text-lg z-10">
               solo-lekcje indywidualne
             </span>
@@ -65,7 +65,7 @@ const index = ({ data }) => {
             to="/duo"
             className="flex justify-center items-center max-w-xs overlay relative md:max-w-md"
           >
-            <StaticImage src="../images/optimized-2.jpg" alt="" />
+            <StaticImage src="../images/Optimized-2.jpg" alt="" />
             <span className="absolute uppercase text-[#fff] font-bold text-lg z-10">
               duo-lekcje w parach
             </span>
@@ -76,7 +76,7 @@ const index = ({ data }) => {
             to="/amigos"
             className="flex justify-center items-center max-w-xs overlay relative md:max-w-md"
           >
-            <StaticImage src="../images/optimized-3.jpg" alt="" />
+            <StaticImage src="../images/Optimized-3.jpg" alt="" />
             <span className="absolute uppercase text-[#fff] font-bold text-lg z-10">
               amigos-lekcje-grupowe
             </span>
@@ -85,7 +85,7 @@ const index = ({ data }) => {
             to="/medellin"
             className="flex justify-center items-center max-w-xs overlay relative md:max-w-md"
           >
-            <StaticImage src="../images/optimized-4.jpg" alt="" />
+            <StaticImage src="../images/Optimized-4.jpg" alt="" />
             <span className="absolute uppercase text-[#fff] font-bold text-lg z-10">
               MEDELLÍN lekcje stacjonarne
             </span>
@@ -118,7 +118,7 @@ const index = ({ data }) => {
                     /> */}
                     <StaticImage
                       className="min-h-96"
-                      src="../images/optimized-1.jpg"
+                      src="../images/Optimized-1.jpg"
                       alt=""
                     />
 

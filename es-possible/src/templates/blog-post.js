@@ -96,7 +96,7 @@ const BlogPostTemplate = ({
                
                   /> */}
                   <StaticImage
-                    src="../images/optimized-4.jpg"
+                    src="../images/Optimized-4.jpg"
                     className="max-w-[250px] h-[100px]"
                     alt=""
                   />
