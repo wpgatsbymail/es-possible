@@ -2,7 +2,7 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import parse from "html-react-parser"
 import { Link, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+
 import Layout from "../components/layout"
 
 const blog = ({ data }) => {

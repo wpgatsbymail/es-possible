@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 
 import parse from "html-react-parser"
-import { GatsbyImage } from "gatsby-plugin-image"
+
 import Testimonials from "../components/testimonials/Testimonials"
 import HeaderHomePage from "../components/header/HeadeHomePage"
 import Footer from "../components/footer"

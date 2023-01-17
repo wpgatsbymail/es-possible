@@ -131,22 +131,22 @@ async function createBlogPostArchive({ posts, gatsbyUtilities }) {
  */
 async function getPosts({ graphql, reporter }) {
   const graphqlResult = await graphql(/* GraphQL */ `
-    query WpPosts {
-      allWpPost(sort: { fields: [date], order: DESC }) {
-        edges {
-          previous {
-            id
-          }
-          post: node {
-            id
-            uri
-          }
-          next {
-            id
-          }
+  query WpPosts {
+    allWpPost(sort: {date: DESC}) {
+      edges {
+        previous {
+          id
+        }
+        post: node {
+          id
+          uri
+        }
+        next {
+          id
         }
       }
     }
+  }
   `)
 
   if (graphqlResult.errors) {
