@@ -118,11 +118,7 @@ const Nav = () => {
 
 
     </div>
-    // font-size: 18px;
-    // font-weight: 500;
-    // background-color: #DE9A08;
-    // border-radius: 25px 25px 25px 25px;
-    // padding: 01em 02em 01em 02em;
+
   )
 }
 

@@ -1,9 +1,7 @@
 import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-
 import parse from "html-react-parser"
-
 import Testimonials from "../components/testimonials/Testimonials"
 import HeaderHomePage from "../components/header/HeadeHomePage"
 import Footer from "../components/Footer"
@@ -155,35 +153,6 @@ export default index
 export const homePageQuery = graphql`
   query WordPressHomepagePost {
     posts: allWpPost(sort: { date: DESC }, limit: 6) {
-      nodes {
-        excerpt
-        uri
-        date(formatString: "MMMM DD, YYYY")
-        title
-        excerpt
-        featuredImage {
-          node {
-            localFile {
-              childImageSharp {
-                gatsbyImageData(
-                  placeholder: BLURRED
-                  layout: CONSTRAINED
-                  quality: 100
-                  aspectRatio: 1.5
-                )
-              }
-            }
-          }
-        }
-      }
-    }
-    exercises: allWpPost(
-      filter: {
-        categories: { nodes: { elemMatch: { name: { eq: "Exercise" } } } }
-      }
-      sort: { date: DESC }
-      limit: 6
-    ) {
       nodes {
         excerpt
         uri

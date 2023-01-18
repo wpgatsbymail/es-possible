@@ -1,31 +1,23 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-// import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
 import parse from "html-react-parser"
+import "../css/@wordpress/block-library/build-style/style.css"
+import "../css/@wordpress/block-library/build-style/theme.css"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import Comments from "../components/Comments"
 
 // We're using Gutenberg so we need the block styles
 // these are copied into this project due to a conflict in the postCSS
 // version used by the Gatsby and @wordpress packages that causes build
 // failures.
 // @todo update this once @wordpress upgrades their postcss version
-import "../css/@wordpress/block-library/build-style/style.css"
-import "../css/@wordpress/block-library/build-style/theme.css"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
 
 const BlogPostTemplate = ({
   data: { previous, next, post, latestArticles },
 }) => {
-  // const featuredImage = {
-  //   data: post.featuredImage?.node?.localFile?.childImageSharp?.gatsbyImageData,
-  //   alt: post.featuredImage?.node?.alt || ``,
-  // }
-  // const ExerciseCategory = post.categories.nodes.name
-
-  // console.log(ExerciseCategory)
-
   return (
     <Layout>
       <Seo title={post.title} description={post.excerpt} />
@@ -58,24 +50,32 @@ const BlogPostTemplate = ({
         <hr />
 
         <nav className="flex flex-col md:flex-row justify-center w-[60vw] my-8 gap-4 md:justify-between">
-          <div >
+          <div>
             {previous && (
-              <Link className="border p-2 bg-[#DE9A08] rounded text-[#fff] text-center hover:opacity-80 md:p-4" to={previous.uri} rel="prev">
+              <Link
+                className="border p-2 bg-[#DE9A08] rounded text-[#fff] text-center hover:opacity-80 md:p-4"
+                to={previous.uri}
+                rel="prev"
+              >
                 ← {parse(previous.title)}
               </Link>
             )}
           </div>
 
-          <div >
+          <div>
             {next && (
-              <Link className="border p-2 bg-[#DE9A08] rounded text-[#fff] text-center hover:opacity-80 md:p-4" to={next.uri} rel="next">
+              <Link
+                className="border p-2 bg-[#DE9A08] rounded text-[#fff] text-center hover:opacity-80 md:p-4"
+                to={next.uri}
+                rel="next"
+              >
                 {parse(next.title)} →
               </Link>
             )}
           </div>
         </nav>
 
-        <div className="hidden md:flex flex-col justify-center gap-8 max-w-[60vw]">
+        <div className="hidden  flex-col justify-center gap-8 max-w-[60vw] mb-8 md:flex">
           <h3 className="self-center text-2xl md:self-start mx-4">
             Ostatnie artykuły
           </h3>
@@ -85,16 +85,9 @@ const BlogPostTemplate = ({
           >
             {latestArticles.nodes.map(latestArticle => {
               const title = latestArticle.title
-              // const featuredImage =
-              //   latestArticle.featuredImage.node.localFile.childImageSharp
-              //     .gatsbyImageData
+
               return (
                 <div className="flex flex-col shadow max-w-[250px] h-[250px]">
-                  {/* <GatsbyImage
-                    className="max-w-[250px] h-[100px]"
-                    image={featuredImage}
-               
-                  /> */}
                   <StaticImage
                     src="../images/Optimized-4.jpg"
                     className="max-w-[250px] h-[100px]"
@@ -121,9 +114,9 @@ const BlogPostTemplate = ({
               )
             })}
           </div>
+          <Comments />
         </div>
       </article>
-      {/* <LatestArticles/> */}
     </Layout>
   )
 }

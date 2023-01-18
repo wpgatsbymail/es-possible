@@ -2,7 +2,6 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import parse from "html-react-parser"
 import { Link, graphql } from "gatsby"
-
 import Layout from "../components/layout"
 
 const blog = ({ data }) => {
@@ -19,20 +18,14 @@ const blog = ({ data }) => {
           </div>
           <div className="flex justify-center items-center">
             <div className="blog-grid">
-              {/* <div className="flex justify-center items-center"> */}
+     
               {blogPosts.map(post => {
                 const title = post.title
-                // const featuredImage =
-                //   post.featuredImage.node.localFile.childImageSharp
-                //     .gatsbyImageData
+   
                 return (
                   <div className=" max-w-sm grid-blog__item">
                     <div className="flex flex-col bg-white shadow-xl">
-                      {/* <GatsbyImage
-                        className="min-h-96"
-                        image={featuredImage}
-             
-                      /> */}
+ 
                       <StaticImage src="../images/Optimized-2.jpg" className="min-h-96" alt="" />
 
                       <Link to={post.uri} itemProp="url" className="p-4">
