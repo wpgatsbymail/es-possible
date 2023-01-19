@@ -3,7 +3,7 @@ import { useForm } from "@formspree/react"
 function ContactForm() {
   const [state] = useForm("mvonokeb")
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>
+    return <p>Dzięki za wiadomość</p>
   }
   return (
     <div className="p-4">

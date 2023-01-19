@@ -1,14 +1,13 @@
 import React from "react"
-import {  useStaticQuery, graphql } from "gatsby"
-
+import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header/Header"
-import '../index.css'
+import "../index.css"
 import Footer from "./Footer"
 
 const Layout = ({ isHomePage, children }) => {
   const {
     wp: {
-      generalSettings: { },
+      generalSettings: {},
     },
   } = useStaticQuery(graphql`
     query LayoutQuery {
@@ -22,15 +21,10 @@ const Layout = ({ isHomePage, children }) => {
   `)
 
   return (
- 
     <div className="" data-is-root-path={isHomePage}>
-
-      <Header/>
-
+      <Header />
       <main>{children}</main>
-      <Footer/>
-
-
+      <Footer />
     </div>
   )
 }

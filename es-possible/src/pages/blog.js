@@ -18,19 +18,20 @@ const blog = ({ data }) => {
           </div>
           <div className="flex justify-center items-center">
             <div className="blog-grid">
-     
               {blogPosts.map(post => {
                 const title = post.title
-   
+
                 return (
                   <div className=" max-w-sm grid-blog__item">
                     <div className="flex flex-col bg-white shadow-xl">
- 
-                      <StaticImage src="../images/Optimized-2.jpg" className="min-h-96" alt="" />
-
+                      <StaticImage
+                        src="../images/Optimized-2.jpg"
+                        className="min-h-96"
+                        alt=""
+                      />
                       <Link to={post.uri} itemProp="url" className="p-4">
                         <h5
-                          itemProp="headline"
+                         itemProp="headline"
                           className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                         >
                           {parse(title)}

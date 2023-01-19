@@ -55,7 +55,7 @@ Es-possible-clone is as title sugest clone of website i made in Wordpress for cl
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13"
 
-**Page require hosting Wordpress on some online not free server. I**
+**Page require hosting Wordpress on some online not free server.**
 I checked few hosting options and all of them returned errors in fetching data from Wordpress and some don't all options like featured image. Local wordpress can be used only for development and tests.
 Host checked
 - 000Webhost	
@@ -67,5 +67,5 @@ Host checked
 ### Links
 [Wordpress page](https://espossible-online.com/) 
 [Es-possible-clone on Netlify](https://es-possible-gatsby-clone.netlify.app/) 
-[Link to Gatsby starter](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-wordpress-blog) 
+[Link to Gatsby starter](https://github.com/wpgatsbymail/es-possible/blob/master/es-possible/Es-possible-clone-screenshot.png) 
 

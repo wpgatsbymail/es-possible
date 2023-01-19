@@ -14,9 +14,12 @@ const HeaderHomePage = () => {
         className="hero-image"
         src="zamiast slajdera.webp"
         alt="hero image"
+        placeholder= "none"
       />
     </div>
   )
 }
 
 export default HeaderHomePage
+
+//There is no clear solution in Gatsby documentation how to create layout only for one page so instead i created another header.
